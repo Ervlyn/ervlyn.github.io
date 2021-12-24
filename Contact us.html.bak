@@ -176,10 +176,10 @@ box-shadow: 0 0 10px #000000b3;
 </div>
 
 <div class="topnav">
-  <a href="Tugas Praktikum Ervlyn12170048-home.html">Home</a>
-  <a href="Tugas Praktikum Ervlyn12170048-Gallery.html">Gallery</a>
-  <a href="Tugas Praktikum Ervlyn12170048-profile.html">About Us</a>
-  <a href="Tugas Praktikum Ervlyn12170048-Contact us.html" style="float:right">Contact Us</a>
+  <a href="home.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="profile.html">About Us</a>
+  <a href="Contact us.html" style="float:right">Contact Us</a>
 </div>
 
 
