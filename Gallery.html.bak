@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -52,35 +53,33 @@ box-shadow: 0 0 20px #000000b3;
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
-background-color: #F7EE9D;
-box-shadow: 0 0 10px #000000b3;   
+.leftcolumn {   
   float: left;
-  width: 80%;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
-  float: right;
-  width: 50%;
-  background-color: #F7EE9D;
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: #F7EE9D;
+  background-color: #aaa;
   background-image: url('bali5.jpg');
      background-repeat: no-repeat;
      background-size: cover;
-  width: 60%;
+  width: 100%;
   padding: 20px;
   
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: #F7EE9D;
+  background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
@@ -99,7 +98,6 @@ box-shadow: 0 0 10px #000000b3;
   text-align: center;
   background: #899199;
   margin-top: 20px;
-  
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -121,8 +119,6 @@ box-shadow: 0 0 10px #000000b3;
 </head>
 <body>
 
-
-
 <div class="header">
   <h1>Ervlyn's Website</h1>
   
@@ -131,44 +127,54 @@ box-shadow: 0 0 10px #000000b3;
 <div class="topnav">
   <a href="home.html">Home</a>
   <a href="Gallery.html">Gallery</a>
-  <a href="About Us.html">About Us</a>
-  <a href="Contact Us.html" style="float:right">Contact Us</a>
+  <a href="profile.html">About Us</a>
+  <a href="Contact us.html" style="float:right">Contact Us</a>
 </div>
-
 
 
 <div class="row">
-  <div class="leftcolumn">
-  
     <div class="card">
-<h1>
+      <h2>My Gallery</h2>
+      <h4>Tempat Wisata</h4>
 
-<font color="#0c1e4d"> <b>BIODATA SAYA</b>
-</h1> 
-	<p> Nama: Ervlyn Wisata </p>
-	<p> Nim: 12170048 </p>
-	
-
-	
-<h2>Hobi Saya Adalah:</h2>
-
-<ol type="1">  
-    <li>Bernyanyi</li>
-  <li>Mendengarkan Lagu</li>
-  <li>Travelling</li>
-</ol>  
-
-<h2>Makanan Kesukaan Saya:</h2>
-<ul type="cyrcle"> 
-  <li>Rendang</li>
-  <li>Sushi</li>
-  <li>Sate Ayam</li>
-</ul>  
-</div>
-</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\1.jpg" alt="La Briza" width="400" height="550">
+    </a>
+    <div class="desc">1. La Briza</div>
+  </div>
 </div>
 
 
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\2.jpg" alt="Bandara I Gusti Ngurah Rai" width="500" height="400">
+    </a>
+    <div class="desc">2. Bandara I Gusti Ngurah Rai
+	</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\3.jpg" alt="Tanah Lot" width="500" height="400">
+    </a>
+    <div class="desc">3. Tanah Lot</div>
+  </div>
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+    </div>
+</div>
 
 <div class="footer">
 <p>Author: 12170048 - Ervlyn Wisata<br>
