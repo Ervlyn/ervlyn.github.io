@@ -91,6 +91,57 @@ box-shadow: 0 0 20px #000000b3;
   clear: both;
 }
 
+.contact-form{
+  width: 70%;
+  max-width: 400px;
+  background: #fafafa;
+  position: absolute;
+  top: 76%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat",sans-serif;
+}
+.contact-form h1{
+  margin-top: 0;
+  font-weight: 180;
+}
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,.txtb textarea{
+  width: 60%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.btn{
+  display: inline-block;
+  background: #008cba;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
 /* Footer */
 .footer {
 box-shadow: 0 0 10px #000000b3;
@@ -121,60 +172,56 @@ box-shadow: 0 0 10px #000000b3;
 
 <div class="header">
   <h1>Ervlyn's Website</h1>
-  
+ 
 </div>
 
 <div class="topnav">
   <a href="home.html">Home</a>
   <a href="Gallery.html">Gallery</a>
-  <a href="profile.html">About Us</a>
-  <a href="Contact us.html" style="float:right">Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Contact.html" style="float:right">Contact Us</a>
 </div>
-
 
 <div class="row">
     <div class="card">
-      <h2>My Gallery</h2>
-      <h4>Tempat Wisata</h4>
+      <h2>Hey Guyss ..</h2>
+      <h4></h4>
 
 <div class="responsive">
   <div class="gallery">
-      <img src="images\1.jpg" alt="La Briza" width="400" height="550">
+      <img src="images\qrcode.jpg" alt="qrcode" width="500" height="300">
     </a>
-    <div class="desc">1. La Briza</div>
+    <div class="desc"></div>
   </div>
 </div>
-
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\2.jpg" alt="Bandara I Gusti Ngurah Rai" width="500" height="400">
-    </a>
-    <div class="desc">2. Bandara I Gusti Ngurah Rai
-	</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\3.jpg" alt="Tanah Lot" width="500" height="400">
-    </a>
-    <div class="desc">3. Tanah Lot</div>
-  </div>
-</div>
-
 
 
 
 
 <div class="clearfix"></div>
 
-<div style="padding:6px;">
-  
-</div>
+<div class="contact-form">
+    <h1>Hubungi Kami</h1>
+    <div class="txtb">
+      <label>Nama Lengkap :</label>
+      <input type="text" name="" value="" placeholder="Tulis Nama disini...">
+    </div>
+    <div class="txtb">
+      <label>Email :</label>
+      <input type="email" name="" value="" placeholder="Tulis Email disini...">
+    </div>
+   
+    <div class="txtb">
+      <label>Pesan :</label>
+      <textarea></textarea>
+    </div>
+    <a class="btn">Kirim</a>
+  </div>
 
     </div>
 </div>
+
+<div style="height:40px;"> </div>
 
 <div class="footer">
 <p>Author: 12170048 - Ervlyn Wisata<br>
