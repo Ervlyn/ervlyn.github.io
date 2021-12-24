@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -47,39 +46,41 @@ box-shadow: 0 0 20px #000000b3;
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F7EE9D;
   color: black;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
+background-color: #F7EE9D;
+box-shadow: 0 0 10px #000000b3;   
   float: left;
-  width: 75%;
+  width: 80%;
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
+  float: right;
+  width: 50%;
+  background-color: #F7EE9D;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: #F7EE9D;
   background-image: url('bali5.jpg');
      background-repeat: no-repeat;
      background-size: cover;
-  width: 100%;
+  width: 60%;
   padding: 20px;
   
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #F7EE9D;
   padding: 20px;
   margin-top: 20px;
 }
@@ -91,57 +92,6 @@ box-shadow: 0 0 20px #000000b3;
   clear: both;
 }
 
-.contact-form{
-  width: 70%;
-  max-width: 400px;
-  background: #fafafa;
-  position: absolute;
-  top: 76%;
-  left: 70%;
-  transform: translate(-50%,-50%);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 20px #000000b3;
-  font-family: "Montserrat",sans-serif;
-}
-.contact-form h1{
-  margin-top: 0;
-  font-weight: 180;
-}
-.txtb{
-  border:1px solid gray;
-  margin: 8px 0;
-  padding: 12px 18px;
-  border-radius: 8px;
-}
-.txtb label{
-  display: block;
-  text-align: left;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-.txtb input,.txtb textarea{
-  width: 60%;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
-  margin-top: 6px;
-}
-.btn{
-  display: inline-block;
-  background: #008cba;
-  padding: 14px 0;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-}
-
 /* Footer */
 .footer {
 box-shadow: 0 0 10px #000000b3;
@@ -149,6 +99,7 @@ box-shadow: 0 0 10px #000000b3;
   text-align: center;
   background: #899199;
   margin-top: 20px;
+  
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -170,9 +121,11 @@ box-shadow: 0 0 10px #000000b3;
 </head>
 <body>
 
+
+
 <div class="header">
   <h1>Ervlyn's Website</h1>
- 
+  
 </div>
 
 <div class="topnav">
@@ -183,46 +136,39 @@ box-shadow: 0 0 10px #000000b3;
 </div>
 
 
+
 <div class="row">
+  <div class="leftcolumn">
+  
     <div class="card">
-      <h2>Hey Guyss ..</h2>
-      <h4></h4>
+<h1>
 
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\qrcode.jpg" alt="qrcode" width="500" height="300">
-    </a>
-    <div class="desc"></div>
-  </div>
+<font color="#0c1e4d"> <b>BIODATA SAYA</b>
+</h1> 
+	<p> Nama: Ervlyn Wisata </p>
+	<p> Nim: 12170048 </p>
+	
+
+	
+<h2>Hobi Saya Adalah:</h2>
+
+<ol type="1">  
+    <li>Bernyanyi</li>
+  <li>Mendengarkan Lagu</li>
+  <li>Travelling</li>
+</ol>  
+
+<h2>Makanan Kesukaan Saya:</h2>
+<ul type="cyrcle"> 
+  <li>Rendang</li>
+  <li>Sushi</li>
+  <li>Sate Ayam</li>
+</ul>  
+</div>
+</div>
 </div>
 
 
-
-
-<div class="clearfix"></div>
-
-<div class="contact-form">
-    <h1>Hubungi Kami</h1>
-    <div class="txtb">
-      <label>Nama Lengkap :</label>
-      <input type="text" name="" value="" placeholder="Tulis Nama disini...">
-    </div>
-    <div class="txtb">
-      <label>Email :</label>
-      <input type="email" name="" value="" placeholder="Tulis Email disini...">
-    </div>
-   
-    <div class="txtb">
-      <label>Pesan :</label>
-      <textarea></textarea>
-    </div>
-    <a class="btn">Kirim</a>
-  </div>
-
-    </div>
-</div>
-
-<div style="height:40px;"> </div>
 
 <div class="footer">
 <p>Author: 12170048 - Ervlyn Wisata<br>
