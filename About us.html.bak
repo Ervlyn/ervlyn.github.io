@@ -46,7 +46,7 @@ box-shadow: 0 0 20px #000000b3;
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F7EE9D;
   color: black;
 }
 
