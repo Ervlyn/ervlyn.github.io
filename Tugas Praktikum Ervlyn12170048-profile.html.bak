@@ -6,13 +6,14 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: bodoni MT;
   padding: 10px;
-  background: #d0f5ef;
+  background: #AAC3DB;
 }
 
 /* Header/Blog Title */
 .header {
+box-shadow: 0 0 20px #000000b3;
   padding: 30px;
   text-align: center;
   background: white;
@@ -34,6 +35,7 @@ body {
 
 /* Style the topnav links */
 .topnav a {
+box-shadow: 0 0 20px #000000b3;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -44,39 +46,41 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F7EE9D;
   color: black;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
+background-color: #F7EE9D;
+box-shadow: 0 0 10px #000000b3;   
   float: left;
-  width: 75%;
+  width: 80%;
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
+  float: right;
+  width: 50%;
+  background-color: #F7EE9D;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: #F7EE9D;
   background-image: url('bali5.jpg');
      background-repeat: no-repeat;
      background-size: cover;
-  width: 100%;
+  width: 60%;
   padding: 20px;
   
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #f1f1f1;
   padding: 20px;
   margin-top: 20px;
 }
@@ -90,6 +94,7 @@ body {
 
 /* Footer */
 .footer {
+box-shadow: 0 0 10px #000000b3;
   padding: 20px;
   text-align: center;
   background: #899199;
@@ -132,7 +137,10 @@ body {
 
 
 
-
+<div class="row">
+  <div class="leftcolumn">
+  
+    <div class="card">
 <h1>
 
 <font color="#0c1e4d"> <b>BIODATA SAYA</b>
@@ -156,6 +164,9 @@ body {
   <li>Sushi</li>
   <li>Sate Ayam</li>
 </ul>  
+</div>
+</div>
+</div>
 
 
 
