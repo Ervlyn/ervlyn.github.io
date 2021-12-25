@@ -313,7 +313,7 @@ box-shadow: 0 0 10px #000000b3;
     <div id="fcf-form">
     <h3 class="fcf-h3">Contact me</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact me">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact-me">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
