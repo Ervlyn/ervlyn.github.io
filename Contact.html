@@ -311,28 +311,28 @@ box-shadow: 0 0 10px #000000b3;
 <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+    <h3 class="fcf-h3">Contact me</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact-me">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <input type="text" id="Name" name="nama" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label">Your email address</label>
             <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                <input type="email" id="Email" name="email" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Your message</label>
             <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <textarea id="Message" name="pesan" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
 
@@ -361,6 +361,18 @@ box-shadow: 0 0 10px #000000b3;
 
 
 <div style="height:40px;"> </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSjFUC818gaWWCvneL9P0ZvFT5YFBORGm0IDE06vTY0B-FE0GPqd75YE_8sXde-0EC/exec'
+  const form = document.forms['Contact-me']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 <div class="footer">
 <p>Author: 12170048 - Ervlyn Wisata<br>
