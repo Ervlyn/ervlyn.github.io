@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: bodoni MT;
+  size:80;
+  padding: 10px;
+  background: #AAC3DB;
+}
+
+/* Header/Blog Title */
+.header {
+box-shadow: 0 0 20px #000000b3;
+
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('bali4.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+
+  overflow: hidden;
+  background-color: #333;
+ 
+}
+
+/* Style the topnav links */
+.topnav a {
+box-shadow: 0 0 20px #000000b3;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #AAC3DB;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+box-shadow: 0 0 20px #000000b3;
+  background-color: #aaa;
+  background-image: url('bali5.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #EBF7F3 ;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+box-shadow: 0 0 10px #000000b3;
+  padding: 20px;
+  text-align: center;
+  background: #899199;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    float: center;
+	width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: center;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ervlyn's Website</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="About.html">About me</a>
+  <a href="Contact.html" style="float:right">Contact me</a>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+  
+    <div class="card">
+      <h2>Pengalaman Selama Travelling</h2>
+      <h5> <font size="4">Kegiatan Liburan di Bali, 20 Oktober 2021 </font></h5>
+      <img src="images\bali3.jpg" width="902" height="165" />
+     <font size="4"> <p>Selamat datang di kegiatan jalan-jalan ku di Bali selama 4 hari selama pandemi guys.</p>
+	 <p>Tentunya selama pandemi banyak banget yang berbeda dari biasanya. Tetapi liburanku tetap menyenangkan kok guys.
+	 Dibawah ini akan aku kasih jadwal selama 4 hari aku di Bali selama pandemic.</p>
+
+      <table border='1'>
+
+<thead style="background-color:#F1FF1C ;color:black">
+
+<tr>
+	<th colspan="2"> Jadwal traveling saat pandemic</th>
+	
+</tr>
+</thead>
+
+<tr>
+<thead style="background-color:#EBF36D;color:black">
+
+	<td>Hari Pertama</td>
+	<td><p>16.00 : Sampai di bandara I Gusti Ngurah Rai</p> 
+	<p>16.20 : Makan di bandara </p>  
+	<p>17.00 : Mengambil mobil sewaan</p> 
+	<p>17.30 Sampai di Penginapan  permata Ariza di daerah jimbaran atas</p> </td>
+
+</thead>
+</tr>
+
+<tr>
+<thead style="background-color:#EBF36D;color:black">
+
+	<td>Hari Kedua</td>
+	<td><p>08.00 :Memulai perjalanan di Pantai Kuta</p>  
+	<p>10.00 : Lanjut pergi ke Tanah Lot</p> 
+	<p>14.30 : Pergi ke Restaurant La Briza</p>
+	<p> 19.10 : Makan di penginapan</td>
+
+</thead>
+</tr>
+
+<tr>
+<thead style="background-color:#EBF36D;color:black">
+
+	<td>Hari Ketiga</td>
+	<td><p>08.00 : Membeli oleh-oleh di krisna </p>  
+	<p>09.30 : Melanjutkan pencarian oleh-oleh di Pie Enak</p> 
+	<p>10.00 : Sate Bawah Pohon</p> 
+	<p>11.00-16.50 : Swab PCR</p>
+	<p>17.30 : Makan seafood di pantai Jimbaran</p>
+	</td>
+
+</thead>
+</tr>
+
+<tr>
+<thead style="background-color:#EBF36D;color:black">
+
+	<td>Hari Keempat</td>
+	<td><p>08.00 : Jalan-jalan di sekitar pantai Jimbaran</p>  
+	<p>09.00 : Membeli makan</p> 
+	<p>10.00 : Ke Bandara dan memulangkan mobil sewaan </p>
+	<p>17.00 : Menaiki pesawat untuk kembali ke Jakarta</p>
+	</td>
+
+</thead>
+</tr>
+
+</table>
+<p></p>	 
+<p>Di hari pertama keberangkatan itu aku hectic banget dan hampir ga jadi terbang, karena saat pandemi  peraturan bisa berubah kapan aja guys , dan di hari h aku berangkat tiba
+
+-tiba keluar aturan harus Swab PCR Padahal tadinya peraturannya sudah boleh antigen guys. 
+
+Jadi keberangkatan aku seharusnya di tanggal 19 Oktober harus mundur sehari dan karena hal ini aku harus rela bayar uang reschedule dan biaya tiket pesawat pada tanggal itu juga
+
+
+
+Total seharusnya harga tiketku 600rb/pax
+
+Jadi 1,2 juta/pax
+
+
+
+Jadi saran dari aku jangan pergi ke luar pulau saat tanggal liburan deh….</p>
+
+
+
+<p>Nah waktu di bali juga sebenernya ga terlalu ramai karna penjual masih banyak yang tutup seperti di kuta yang sangat marak dengan perbelanjaan tapi ini malah tutup, sekali ada yang buka, harganya sangat tinggi guys…
+
+
+
+Oiya dan saran aja kalau mau ke daerah pantai, di Bali itu kita harus tau jam pasang surutnya air laut, karena akan rugi banget kalau kita datang ke laut saat air pasang 
+
+Karena ga akan bisa foto2 di tepi pantai.. jadi saran aku kita buka dulu di https://pasanglaut.com/as/central-indonesia/benoa#_tides
+
+
+
+Rata-rata sih sore ya guys sudah surut, jadi kita bisa foto-foto di pantai sambil sunset an gitu guys….</p>
+
+
+
+<p>Lalu hal yang paling menyebalkan saat aku ke Bali di waktu pandemic adalah swab untuk pulang ke jakarta itu saat aku pakai swab yang dari lion itu bener-bener wasting time aku banget guys…
+
+
+
+Karena murah jadi antriannya panjang dan tidak terarah 
+
+Sehingga banyak kecurangan yang membuat aku semakin terbelakang dan semakin lama…
+
+
+
+Huft hampir seharian waktu aku habis saat swab itu bener2 buat aku mikir2 deh kalau ke Bali disaat seperti ini 
+
+Sangat tidak di sarankan
+
+Kecuali kamu punya uang lebih sih untuk swab PCR yang jalur mandiri 
+
+Karena bedanya sangat jauh
+
+Tapi sekarang kan pemerintah sudah keluarin maksimal harga swab yang baru ya guys 
+
+Jadi aman dehhh uang dikantung untuk kaun milenials
+
+
+
+So kalian bisa foto-foto liat pengalaman aku jalan-jalan di Bali di galery ku guys
+
+
+
+Oiya jika ada pertanyaan seputar saran dan atau kritik untuk penulisan web ini boleh hubungi aku ya di tab contact us 
+
+
+
+Masukan kalian akan sangat berharga dan bermanfaat untuk kemajuan web ini 
+
+
+
+Terima kasih sudah berkunjung semoga bermanfaat untuk holiday kalian yang ke Bali Apalagi saat pandemic </p>
+ 
+ </font>
+ 
+	 
+
+
+    </div>
+      </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2></h2>
+      <div class="fakeimg" style="height:350px;"> </div>
+	 
+	<p><font face="century gothic" ;font italic>Please be a traveler, not a tourist. Try new things, meet new people, and look beyond what's right in front of you. Those are the keys to understanding this amazing world we live in." <b>- Andrew Zimmern</b> </font>
+</p>
+
+
+    </div>
+      </div>
+</div>
+
+
+
+<div style="height:40px;"> </div>
+
+<div class="footer">
+<p>Author: 12170048 - Ervlyn Wisata<br>
+  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
+  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
+  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
+</div>
+  
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: bodoni MT;
+  padding: 10px;
+  background: #AAC3DB;
+}
+
+/* Header/Blog Title */
+.header {
+box-shadow: 0 0 20px #000000b3;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('bali4.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ 
+}
+
+/* Style the topnav links */
+.topnav a {
+box-shadow: 0 0 20px #000000b3;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  background-image: url('bali5.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+box-shadow: 0 0 10px #000000b3;
+  padding: 20px;
+  text-align: center;
+  background: #899199;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ervlyn's Website</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="About.html">About me</a>
+  <a href="Contact.html" style="float:right">Contact me</a>
+</div>
+
+
+<div class="row">
+    <div class="card">
+      <h2>My Gallery</h2>
+      <h4>Tempat Wisata</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\1.jpg" alt="La Briza" width="400" height="550">
+    <div class="desc">1. La Briza</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\2.jpg" alt="Bandara I Gusti Ngurah Rai" width="500" height="400">
+    
+    <div class="desc">2. Bandara I Gusti Ngurah Rai
+	</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="images\3.jpg" alt="Tanah Lot" width="500" height="400">
+   
+    <div class="desc">3. Tanah Lot</div>
+  </div>
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+    </div>
+</div>
+
+<div class="footer">
+<p>Author: 12170048 - Ervlyn Wisata<br>
+  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
+  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
+  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
+</div>
+  
+</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: bodoni MT;
+  padding: 10px;
+  background: #AAC3DB;
+}
+
+/* Header/Blog Title */
+.header {
+box-shadow: 0 0 20px #000000b3;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('bali4.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ 
+}
+
+/* Style the topnav links */
+.topnav a {
+box-shadow: 0 0 20px #000000b3;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+background-color: #F7EE9D;
+box-shadow: 0 0 10px #000000b3;   
+  float: left;
+  width: 80%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+  background-color: #F7EE9D;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #F7EE9D;
+  background-image: url('bali5.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+  width: 60%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #F7EE9D;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+box-shadow: 0 0 10px #000000b3;
+  padding: 20px;
+  text-align: center;
+  background: #899199;
+  margin-top: 20px;
+  
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Ervlyn's Website</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="About.html">About me</a>
+  <a href="Contact.html" style="float:right">Contact me</a>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+  
+    <div class="card">
+<h1>
+
+<font color="#0c1e4d"> <b>BIODATA SAYA</b>
+</h1> 
+	<p> Nama: Ervlyn Wisata </p>
+	<p> Nim: 12170048 </p>
+	
+
+	
+<h2>Hobi Saya Adalah:</h2>
+
+<ol type="1">  
+    <li>Bernyanyi</li>
+  <li>Mendengarkan Lagu</li>
+  <li>Travelling</li>
+</ol>  
+
+<h2>Makanan Kesukaan Saya:</h2>
+<ul type="cyrcle"> 
+  <li>Rendang</li>
+  <li>Sushi</li>
+  <li>Sate Ayam</li>
+</ul>  
+</div>
+</div>
+</div>
+
+
+
+<div class="footer">
+<p>Author: 12170048 - Ervlyn Wisata<br>
+  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
+  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
+  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
+</div>
+  
+</div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: bodoni MT;
+  padding: 10px;
+  background: #AAC3DB;
+}
+
+/* Header/Blog Title */
+.header {
+box-shadow: 0 0 20px #000000b3;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('bali4.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ 
+}
+
+/* Style the topnav links */
+.topnav a {
+box-shadow: 0 0 20px #000000b3;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+     background-repeat: no-repeat;
+     background-size: cover;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 50%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 50%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+box-shadow: 0 0 10px #000000b3;
+  padding: 20px;
+  text-align: center;
+  background: #899199;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ervlyn's Website</h1>
+ 
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="About.html">About me</a>
+  <a href="Contact.html" style="float:right">Contact me</a>
+</div>
+
+
+
+<div class="row">
+    <div class="card">
+      <h2>Hey Guyss ..</h2>
+      <h4></h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="qrcode.jpg" alt="QRcode IG" width="450" height="300">
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact me</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="submit-to-google-sheet">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="nama" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="pesan" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+       
+
+    </form>
+    </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+ 	
+	
+  </div>
+</div>
+
+
+
+<div style="height:40px;"> </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxTTZxTqhIOLNTtkZfJxJQ3GpcNrhqC7L8ptjJDcx6Zz9dJ_9mdRLYj_t_dXUszQEDp1w/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+<script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['submit-to-google-sheet']
+  ...
+</script>
+Have fee
+
+<div class="footer">
+<p>Author: 12170048 - Ervlyn Wisata<br>
+  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
+  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
+  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
+</div>
+  
+</div>
+
+</body>
+</html>
