@@ -313,7 +313,7 @@ box-shadow: 0 0 10px #000000b3;
     <div id="fcf-form">
     <h3 class="fcf-h3">Contact me</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact me">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="submit-to-google-sheet">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
@@ -363,8 +363,8 @@ box-shadow: 0 0 10px #000000b3;
 <div style="height:40px;"> </div>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSjFUC818gaWWCvneL9P0ZvFT5YFBORGm0IDE06vTY0B-FE0GPqd75YE_8sXde-0EC/exec'
-  const form = document.forms['Contact-me']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxTTZxTqhIOLNTtkZfJxJQ3GpcNrhqC7L8ptjJDcx6Zz9dJ_9mdRLYj_t_dXUszQEDp1w/exec'
+  const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()

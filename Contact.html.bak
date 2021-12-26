@@ -313,7 +313,7 @@ box-shadow: 0 0 10px #000000b3;
     <div id="fcf-form">
     <h3 class="fcf-h3">Contact me</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact-me">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" name="Contact me">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
@@ -364,7 +364,7 @@ box-shadow: 0 0 10px #000000b3;
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwSjFUC818gaWWCvneL9P0ZvFT5YFBORGm0IDE06vTY0B-FE0GPqd75YE_8sXde-0EC/exec'
-  const form = document.forms['Contact-me']
+  const form = document.forms['Contact me']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
