@@ -374,6 +374,17 @@ box-shadow: 0 0 10px #000000b3;
   })
 </script>
 
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+<script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['submit-to-google-sheet']
+  ...
+</script>
+Have fee
+
 <div class="footer">
 <p>Author: 12170048 - Ervlyn Wisata<br>
   <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
