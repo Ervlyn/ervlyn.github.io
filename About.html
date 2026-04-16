@@ -1,184 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html class="light" lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: bodoni MT;
-  padding: 10px;
-  background: #AAC3DB;
-}
-
-/* Header/Blog Title */
-.header {
-box-shadow: 0 0 20px #000000b3;
-  padding: 30px;
-  text-align: center;
-  background: white;
-  background-image: url('bali4.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
- 
-}
-
-/* Style the topnav links */
-.topnav a {
-box-shadow: 0 0 20px #000000b3;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-background-color: #F7EE9D;
-box-shadow: 0 0 10px #000000b3;   
-  float: left;
-  width: 80%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: right;
-  width: 50%;
-  background-color: #F7EE9D;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #F7EE9D;
-  background-image: url('bali5.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-  width: 60%;
-  padding: 20px;
-  
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: #F7EE9D;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-box-shadow: 0 0 10px #000000b3;
-  padding: 20px;
-  text-align: center;
-  background: #899199;
-  margin-top: 20px;
-  
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Me | Ervlyn Wisata</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-background": "#2c2f31",
+                "on-primary-fixed-variant": "#00616e",
+                "surface-tint": "#006572",
+                "secondary-fixed": "#e3e6b1",
+                "on-tertiary-container": "#004764",
+                "surface-container": "#e5e9eb",
+                "surface-container-highest": "#d9dde0",
+                "surface": "#f5f7f9",
+                "background": "#f5f7f9",
+                "primary-fixed": "#8eebfc",
+                "primary-container": "#8eebfc",
+                "primary": "#006572",
+                "surface-container-low": "#eef1f3",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#2c2f31"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .clay-button {
+            box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.3), 0 10px 20px -5px rgba(0, 101, 114, 0.2);
+        }
+        .clay-card {
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.06);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-background text-on-background font-body antialiased">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <span class="text-2xl font-black tracking-tighter text-teal-800 font-headline">Ervlyn Wisata</span>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-500 font-medium hover:text-teal-600 transition-all font-headline" href="index.html">Home</a>
+                <a class="text-slate-500 font-medium hover:text-teal-600 transition-all font-headline" href="home.html">Travel Log</a>
+                <a class="text-slate-500 font-medium hover:text-teal-600 transition-all font-headline" href="Gallery.html">Gallery</a>
+                <a class="text-teal-600 border-b-2 border-teal-500 pb-1 font-bold font-headline" href="About.html">About</a>
+                <a class="text-slate-500 font-medium hover:text-teal-600 transition-all font-headline" href="Contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-teal-700">account_circle</span>
+            </div>
+        </div>
+    </nav>
 
+    <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto space-y-32">
+        <!-- Hero Section / Profile Card -->
+        <section class="relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative group">
+                    <div class="absolute -inset-4 bg-primary-container/20 rounded-xl blur-3xl group-hover:bg-primary-container/30 transition-all"></div>
+                    <div class="relative bg-surface-container-lowest p-4 rounded-xl clay-card overflow-hidden">
+                        <!-- Using bali4.jpg placeholder for profile if needed, or keeping it abstract -->
+                        <img alt="Profile" class="w-full h-[500px] object-cover rounded-lg" src="bali4.jpg"/>
+                        <div class="absolute -top-6 -right-6 bg-primary w-24 h-24 rounded-full flex items-center justify-center clay-button transform rotate-12">
+                            <span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="font-headline font-bold uppercase tracking-[0.2em] text-teal-700 text-sm">Welcome to my world</span>
+                    <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-none">
+                        I'm Ervlyn, a seeker of <span class="text-primary italic">beautiful</span> stories.
+                    </h1>
+                    <div class="bg-surface-container-low p-6 rounded-lg space-y-2 border-l-4 border-primary">
+                        <p class="text-lg font-bold">Biodata Saya</p>
+                        <p class="text-on-surface-variant font-medium">Nama: Ervlyn Wisata</p>
+                        <p class="text-on-surface-variant font-medium">NIM: 12170048</p>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="Contact.html" class="bg-primary text-white px-8 py-4 rounded-full font-headline font-bold clay-button transition-transform active:scale-95 text-center">Let's Connect</a>
+                        <a href="Gallery.html" class="bg-surface-container-lowest/40 backdrop-blur-lg px-8 py-4 rounded-full font-headline font-bold border border-white/20 transition-all hover:bg-white/60 text-center">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skill/Interest Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            <div class="space-y-8 mt-12">
+                <div class="w-16 h-1 bg-primary"></div>
+                <h2 class="font-headline text-4xl font-bold tracking-tight">The Narrative of My Journey</h2>
+                <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+                    <p>Hobi mengerjakan proyek digital sambil mendengarkan lagu adalah cara saya menemukan inspirasi. Perjalanan ke Bali bukan hanya sekadar liburan, tapi cara saya memahami dunia melalui lensa dan tulisan.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Hobi 1 -->
+                <div class="bg-secondary-container/30 p-8 rounded-lg space-y-4 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">music_note</span>
+                    <h3 class="font-headline font-bold text-xl">Bernyanyi</h3>
+                    <p class="text-sm text-on-surface-variant">Finding rhythm in the chaos of life.</p>
+                </div>
+                <!-- Hobi 2 -->
+                <div class="bg-primary-container/30 p-8 rounded-lg space-y-4 mt-8 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">headphones</span>
+                    <h3 class="font-headline font-bold text-xl">Mendengarkan Lagu</h3>
+                    <p class="text-sm text-on-surface-variant"> soundtracks to my daily digital adventures.</p>
+                </div>
+                <!-- Hobi 3 -->
+                <div class="bg-tertiary-container/30 p-8 rounded-lg space-y-4 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-teal-600 text-4xl" style="font-variation-settings: 'FILL' 1;">flight</span>
+                    <h3 class="font-headline font-bold text-xl">Travelling</h3>
+                    <p class="text-sm text-on-surface-variant">Exploring new horizons, one city at a time.</p>
+                </div>
+                <!-- Food -->
+                <div class="bg-surface-container-high p-8 rounded-lg space-y-4 mt-8 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-on-surface text-4xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    <h3 class="font-headline font-bold text-xl">Favorite Foods</h3>
+                    <p class="text-sm text-on-surface-variant">Rendang, Sushi, Sate Ayam - The fuel of life.</p>
+                </div>
+            </div>
+        </section>
 
-<div class="header">
-  <h1>Ervlyn's Website</h1>
-  
-</div>
+        <!-- Map Section (Stylized) -->
+        <section class="space-y-12">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="font-headline text-4xl font-bold tracking-tight">Current Location</h2>
+                <p class="text-on-surface-variant">Mapping the footprints of my exploration.</p>
+            </div>
+            <div class="relative rounded-xl overflow-hidden clay-card h-[400px]">
+                <div class="absolute inset-0 bg-slate-200 flex items-center justify-center font-headline font-black text-6xl opacity-20 select-none">B A L I</div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+                <div class="absolute bottom-8 left-8 bg-surface-container-lowest/80 backdrop-blur-xl p-8 rounded-lg max-w-sm clay-card border border-white/40">
+                    <div class="flex items-center gap-2 text-primary font-bold font-headline mb-2">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <span>RECENTLY AT</span>
+                    </div>
+                    <h4 class="text-2xl font-black font-headline tracking-tight text-on-surface">Jimbaran, Bali</h4>
+                    <p class="text-on-surface-variant mt-2">Menikmati seafood di tepi pantai dengan suara ombak yang menenangkan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div class="topnav">
-  <a href="home.html">Home</a>
-  <a href="Gallery.html">Gallery</a>
-  <a href="About.html">About me</a>
-  <a href="Contact.html" style="float:right">Contact me</a>
-</div>
-
-
-
-<div class="row">
-  <div class="leftcolumn">
-  
-    <div class="card">
-<h1>
-
-<font color="#0c1e4d"> <b>BIODATA SAYA</b>
-</h1> 
-	<p> Nama: Ervlyn Wisata </p>
-	<p> Nim: 12170048 </p>
-	
-
-	
-<h2>Hobi Saya Adalah:</h2>
-
-<ol type="1">  
-    <li>Bernyanyi</li>
-  <li>Mendengarkan Lagu</li>
-  <li>Travelling</li>
-</ol>  
-
-<h2>Makanan Kesukaan Saya:</h2>
-<ul type="cyrcle"> 
-  <li>Rendang</li>
-  <li>Sushi</li>
-  <li>Sate Ayam</li>
-</ul>  
-</div>
-</div>
-</div>
-
-
-
-<div class="footer">
-<p>Author: 12170048 - Ervlyn Wisata<br>
-  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
-  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
-  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
-  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
-</div>
-  
-</div>
-
+    <footer class="w-full py-12 px-8 bg-slate-50">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+            <span class="text-lg font-bold text-teal-800 font-headline">Ervlyn Wisata</span>
+            <p class="text-sm text-slate-500 font-body">© 2024 Ervlyn Wisata. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,321 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html class="light" lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: bodoni MT;
-  size:80;
-  padding: 10px;
-  background: #AAC3DB;
-}
-
-/* Header/Blog Title */
-.header {
-box-shadow: 0 0 20px #000000b3;
-
-  padding: 30px;
-  text-align: center;
-  background: white;
-  background-image: url('bali4.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-
-  overflow: hidden;
-  background-color: #333;
- 
-}
-
-/* Style the topnav links */
-.topnav a {
-box-shadow: 0 0 20px #000000b3;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: right;
-  width: 25%;
-  background-color: #AAC3DB;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-box-shadow: 0 0 20px #000000b3;
-  background-color: #aaa;
-  background-image: url('bali5.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-  width: 100%;
-  padding: 20px;
-  
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: #EBF7F3 ;
-  padding: 20px;
-  margin-top: 20px;
-  
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-box-shadow: 0 0 10px #000000b3;
-  padding: 20px;
-  text-align: center;
-  background: #899199;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    float: center;
-	width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: center;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Travel Log: Bali | Ervlyn Wisata</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-background": "#2c2f31",
+                "error-container": "#fb5151",
+                "on-primary-fixed-variant": "#00616e",
+                "surface-tint": "#006572",
+                "on-error-container": "#570008",
+                "secondary-fixed": "#e3e6b1",
+                "on-tertiary-container": "#004764",
+                "surface-container": "#e5e9eb",
+                "surface-container-highest": "#d9dde0",
+                "secondary-dim": "#4f522a",
+                "surface": "#f5f7f9",
+                "tertiary-fixed-dim": "#7dc4ef",
+                "tertiary-dim": "#005577",
+                "inverse-on-surface": "#9a9d9f",
+                "on-secondary": "#f4f7c0",
+                "error-dim": "#9f0519",
+                "outline": "#747779",
+                "background": "#f5f7f9",
+                "on-tertiary": "#e8f4ff",
+                "tertiary-container": "#8bd2fe",
+                "primary-dim": "#005864",
+                "error": "#b31b25",
+                "primary-fixed": "#8eebfc",
+                "surface-dim": "#d0d5d8",
+                "on-primary-fixed": "#00424c",
+                "primary-container": "#8eebfc",
+                "inverse-primary": "#8eebfc",
+                "tertiary": "#006288",
+                "surface-container-high": "#dfe3e6",
+                "on-tertiary-fixed-variant": "#005171",
+                "outline-variant": "#abadaf",
+                "on-secondary-fixed-variant": "#5b5e35",
+                "surface-container-low": "#eef1f3",
+                "secondary-fixed-dim": "#d5d8a4",
+                "on-secondary-container": "#51542c",
+                "surface-container-lowest": "#ffffff",
+                "on-surface-variant": "#595c5e",
+                "on-primary-container": "#005762",
+                "secondary-container": "#e3e6b1",
+                "on-primary": "#d9f8ff",
+                "on-tertiary-fixed": "#003248",
+                "secondary": "#5b5e35",
+                "on-error": "#ffefee",
+                "inverse-surface": "#0b0f10",
+                "on-surface": "#2c2f31",
+                "tertiary-fixed": "#8bd2fe",
+                "primary": "#006572",
+                "on-secondary-fixed": "#3f421b",
+                "primary-fixed-dim": "#80dcee",
+                "surface-variant": "#d9dde0",
+                "surface-bright": "#f5f7f9"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .clay-shadow {
+            box-shadow: 0 20px 40px -10px rgba(0, 101, 114, 0.12), 
+                        inset 0 2px 4px rgba(142, 235, 252, 0.4);
+        }
+    </style>
 </head>
-<body>
-
-<div class="header">
-  <h1>Ervlyn's Website</h1>
-  
-</div>
-
-<div class="topnav">
-  <a href="home.html">Home</a>
-  <a href="Gallery.html">Gallery</a>
-  <a href="About.html">About me</a>
-  <a href="Contact.html" style="float:right">Contact me</a>
-</div>
-
-
-
-<div class="row">
-  <div class="leftcolumn">
-  
-    <div class="card">
-      <h2>Pengalaman Selama Travelling</h2>
-      <h5> <font size="4">Kegiatan Liburan di Bali, 20 Oktober 2021 </font></h5>
-      <img src="images\bali3.jpg" width="902" height="165" />
-     <font size="4"> <p>Selamat datang di kegiatan jalan-jalan ku di Bali selama 4 hari selama pandemi guys.</p>
-	 <p>Tentunya selama pandemi banyak banget yang berbeda dari biasanya. Tetapi liburanku tetap menyenangkan kok guys.
-	 Dibawah ini akan aku kasih jadwal selama 4 hari aku di Bali selama pandemic.</p>
-
-      <table border='1'>
-
-<thead style="background-color:#F1FF1C ;color:black">
-
-<tr>
-	<th colspan="2"> Jadwal traveling saat pandemic</th>
-	
-</tr>
-</thead>
-
-<tr>
-<thead style="background-color:#EBF36D;color:black">
-
-	<td>Hari Pertama</td>
-	<td><p>16.00 : Sampai di bandara I Gusti Ngurah Rai</p> 
-	<p>16.20 : Makan di bandara </p>  
-	<p>17.00 : Mengambil mobil sewaan</p> 
-	<p>17.30 Sampai di Penginapan  permata Ariza di daerah jimbaran atas</p> </td>
-
-</thead>
-</tr>
-
-<tr>
-<thead style="background-color:#EBF36D;color:black">
-
-	<td>Hari Kedua</td>
-	<td><p>08.00 :Memulai perjalanan di Pantai Kuta</p>  
-	<p>10.00 : Lanjut pergi ke Tanah Lot</p> 
-	<p>14.30 : Pergi ke Restaurant La Briza</p>
-	<p> 19.10 : Makan di penginapan</td>
-
-</thead>
-</tr>
-
-<tr>
-<thead style="background-color:#EBF36D;color:black">
-
-	<td>Hari Ketiga</td>
-	<td><p>08.00 : Membeli oleh-oleh di krisna </p>  
-	<p>09.30 : Melanjutkan pencarian oleh-oleh di Pie Enak</p> 
-	<p>10.00 : Sate Bawah Pohon</p> 
-	<p>11.00-16.50 : Swab PCR</p>
-	<p>17.30 : Makan seafood di pantai Jimbaran</p>
-	</td>
-
-</thead>
-</tr>
-
-<tr>
-<thead style="background-color:#EBF36D;color:black">
-
-	<td>Hari Keempat</td>
-	<td><p>08.00 : Jalan-jalan di sekitar pantai Jimbaran</p>  
-	<p>09.00 : Membeli makan</p> 
-	<p>10.00 : Ke Bandara dan memulangkan mobil sewaan </p>
-	<p>17.00 : Menaiki pesawat untuk kembali ke Jakarta</p>
-	</td>
-
-</thead>
-</tr>
-
-</table>
-<p></p>	 
-<p>Di hari pertama keberangkatan itu aku hectic banget dan hampir ga jadi terbang, karena saat pandemi  peraturan bisa berubah kapan aja guys , dan di hari h aku berangkat tiba
-
--tiba keluar aturan harus Swab PCR Padahal tadinya peraturannya sudah boleh antigen guys. 
-
-Jadi keberangkatan aku seharusnya di tanggal 19 Oktober harus mundur sehari dan karena hal ini aku harus rela bayar uang reschedule dan biaya tiket pesawat pada tanggal itu juga
-
-
-
-Total seharusnya harga tiketku 600rb/pax
-
-Jadi 1,2 juta/pax
-
-
-
-Jadi saran dari aku jangan pergi ke luar pulau saat tanggal liburan deh….</p>
-
-
-
-<p>Nah waktu di bali juga sebenernya ga terlalu ramai karna penjual masih banyak yang tutup seperti di kuta yang sangat marak dengan perbelanjaan tapi ini malah tutup, sekali ada yang buka, harganya sangat tinggi guys…
-
-
-
-Oiya dan saran aja kalau mau ke daerah pantai, di Bali itu kita harus tau jam pasang surutnya air laut, karena akan rugi banget kalau kita datang ke laut saat air pasang 
-
-Karena ga akan bisa foto2 di tepi pantai.. jadi saran aku kita buka dulu di https://pasanglaut.com/as/central-indonesia/benoa#_tides
-
-
-
-Rata-rata sih sore ya guys sudah surut, jadi kita bisa foto-foto di pantai sambil sunset an gitu guys….</p>
-
-
-
-<p>Lalu hal yang paling menyebalkan saat aku ke Bali di waktu pandemic adalah swab untuk pulang ke jakarta itu saat aku pakai swab yang dari lion itu bener-bener wasting time aku banget guys…
-
-
-
-Karena murah jadi antriannya panjang dan tidak terarah 
-
-Sehingga banyak kecurangan yang membuat aku semakin terbelakang dan semakin lama…
-
-
-
-Huft hampir seharian waktu aku habis saat swab itu bener2 buat aku mikir2 deh kalau ke Bali disaat seperti ini 
-
-Sangat tidak di sarankan
-
-Kecuali kamu punya uang lebih sih untuk swab PCR yang jalur mandiri 
-
-Karena bedanya sangat jauh
-
-Tapi sekarang kan pemerintah sudah keluarin maksimal harga swab yang baru ya guys 
-
-Jadi aman dehhh uang dikantung untuk kaun milenials
-
-
-
-So kalian bisa foto-foto liat pengalaman aku jalan-jalan di Bali di galery ku guys
-
-
-
-Oiya jika ada pertanyaan seputar saran dan atau kritik untuk penulisan web ini boleh hubungi aku ya di tab contact us 
-
-
-
-Masukan kalian akan sangat berharga dan bermanfaat untuk kemajuan web ini 
-
-
-
-Terima kasih sudah berkunjung semoga bermanfaat untuk holiday kalian yang ke Bali Apalagi saat pandemic </p>
- 
- </font>
- 
-	 
-
-
-    </div>
-      </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2></h2>
-      <div class="fakeimg" style="height:350px;"> </div>
-	 
-	<p><font face="century gothic" ;font italic>Please be a traveler, not a tourist. Try new things, meet new people, and look beyond what's right in front of you. Those are the keys to understanding this amazing world we live in." <b>- Andrew Zimmern</b> </font>
-</p>
-
-
-    </div>
-      </div>
-</div>
-
-
-
-<div style="height:40px;"> </div>
-
-<div class="footer">
-<p>Author: 12170048 - Ervlyn Wisata<br>
-  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
-  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
-  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
-  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
-</div>
-  
-</div>
-
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto font-headline font-bold">
+            <div class="text-2xl font-black tracking-tighter text-teal-800 dark:text-teal-200">
+                Ervlyn Wisata
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-slate-500 hover:text-teal-600 transition-all" href="index.html">Home</a>
+                <a class="text-teal-600 border-b-2 border-teal-500 pb-1" href="home.html">Travel Log</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all" href="Gallery.html">Gallery</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all" href="About.html">About</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all" href="Contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-teal-700 dark:text-teal-400 cursor-pointer">account_circle</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Canvas -->
+    <main class="pt-28 pb-20 px-6 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <header class="mb-16 relative">
+            <div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl">
+                <img class="w-full h-full object-cover" src="bali4.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+                <div class="absolute bottom-12 left-12">
+                    <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-on-primary bg-primary rounded-full uppercase font-headline">Featured Journey</span>
+                    <h1 class="text-6xl font-extrabold text-white font-headline tracking-tight leading-tight">
+                        Bali Rituals: <br/>The Pandemic Chronicle
+                    </h1>
+                </div>
+            </div>
+            <!-- Floating Summary Card -->
+            <div class="absolute -bottom-10 right-12 glass-card p-8 rounded-lg clay-shadow max-w-sm hidden lg:block">
+                <div class="flex gap-4 items-center mb-4">
+                    <div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-primary tracking-widest uppercase font-headline">Duration</p>
+                        <p class="text-on-surface font-semibold">4 Days of Exploration</p>
+                    </div>
+                </div>
+                <p class="text-on-surface-variant leading-relaxed">Sebuah perjalanan singkat namun bermakna di Pulau Dewata pada Oktober 2021.</p>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- Sidebar Navigation -->
+            <aside class="lg:col-span-3 sticky top-28 space-y-4">
+                <div class="p-6 bg-surface-container-low rounded-lg">
+                    <h3 class="text-sm font-black text-on-surface mb-6 tracking-widest uppercase font-headline">Daily Itinerary</h3>
+                    <nav class="space-y-2">
+                        <a class="flex items-center gap-4 p-3 rounded-md bg-surface-container-lowest text-primary clay-shadow transition-all font-semibold font-headline" href="#day1">
+                            <span class="text-xs opacity-50">01</span> The Arrival
+                        </a>
+                        <a class="flex items-center gap-4 p-3 rounded-md hover:bg-surface-container-high transition-all text-on-surface-variant font-medium font-headline" href="#day2">
+                            <span class="text-xs opacity-50">02</span> Coastal Wandering
+                        </a>
+                        <a class="flex items-center gap-4 p-3 rounded-md hover:bg-surface-container-high transition-all text-on-surface-variant font-medium font-headline" href="#day3">
+                            <span class="text-xs opacity-50">03</span> Souvenirs & Seafood
+                        </a>
+                        <a class="flex items-center gap-4 p-3 rounded-md hover:bg-surface-container-high transition-all text-on-surface-variant font-medium font-headline" href="#day4">
+                            <span class="text-xs opacity-50">04</span> Departure
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Itinerary Timeline -->
+            <div class="lg:col-span-9 space-y-24">
+                <!-- Day 1 -->
+                <section class="relative" id="day1">
+                    <div class="absolute -left-4 top-0 w-px h-full bg-surface-container-highest hidden lg:block"></div>
+                    <div class="absolute -left-6 top-2 w-4 h-4 rounded-full bg-primary ring-4 ring-surface hidden lg:block"></div>
+                    <div class="flex flex-col md:flex-row gap-8 items-center bg-surface-container-lowest p-8 rounded-xl clay-shadow group">
+                        <div class="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="images/2.JPG"/>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h4 class="text-xs font-black text-primary/60 tracking-[0.2em] uppercase font-headline">Day 01</h4>
+                            <h2 class="text-3xl font-bold text-on-surface font-headline leading-tight mb-4">The Arrival Into Silence</h2>
+                            <p class="text-on-surface-variant font-body leading-relaxed mb-6">
+                                16.00 : Sampai di bandara I Gusti Ngurah Rai. <br>
+                                17.30 : Sampai di Penginapan permata Ariza di daerah Jimbaran atas.
+                            </p>
+                            <div class="bg-surface p-4 rounded-lg">
+                                <p class="text-sm font-semibold italic text-primary">"Hectic banget dan hampir ga jadi terbang karena perubahan aturan Swab PCR."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Day 2 -->
+                <section class="relative" id="day2">
+                    <div class="absolute -left-4 top-0 w-px h-full bg-surface-container-highest hidden lg:block"></div>
+                    <div class="absolute -left-6 top-2 w-4 h-4 rounded-full bg-primary/20 ring-4 ring-surface hidden lg:block"></div>
+                    <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-surface-container-lowest p-8 rounded-xl clay-shadow group">
+                        <div class="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="images/3.jpg"/>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h4 class="text-xs font-black text-primary/60 tracking-[0.2em] uppercase font-headline">Day 02</h4>
+                            <h2 class="text-3xl font-bold text-on-surface font-headline leading-tight mb-4">Coastal Wandering</h2>
+                            <p class="text-on-surface-variant font-body leading-relaxed mb-6">
+                                Memulai perjalanan di Pantai Kuta, lanjut ke Tanah Lot, dan menikmati sore di Restaurant La Briza.
+                            </p>
+                            <ul class="text-sm space-y-2 border-t pt-4 border-surface-container-highest">
+                                <li>• 08.00 - Pantai Kuta</li>
+                                <li>• 10.00 - Tanah Lot</li>
+                                <li>• 14.30 - La Briza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Day 3 -->
+                <section class="relative" id="day3">
+                    <div class="absolute -left-4 top-0 w-px h-full bg-surface-container-highest hidden lg:block"></div>
+                    <div class="absolute -left-6 top-2 w-4 h-4 rounded-full bg-primary/20 ring-4 ring-surface hidden lg:block"></div>
+                    <div class="bg-surface-container-lowest p-8 rounded-xl clay-shadow">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                             <div>
+                                <h4 class="text-xs font-black text-primary/60 tracking-[0.2em] uppercase font-headline">Day 03</h4>
+                                <h2 class="text-3xl font-bold text-on-surface font-headline leading-tight mb-4">Souvenirs & Seafood</h2>
+                                <p class="text-on-surface-variant font-body leading-relaxed">
+                                    Membeli oleh-oleh di Krisna dan Pie Enak, lalu makan malam seafood di pantai Jimbaran yang ikonik.
+                                </p>
+                             </div>
+                             <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-primary/5 p-4 rounded-lg">
+                                    <p class="text-[10px] font-bold text-primary uppercase">Morning</p>
+                                    <p class="text-sm font-bold">Krisna & Pie Enak</p>
+                                </div>
+                                <div class="bg-secondary/5 p-4 rounded-lg">
+                                    <p class="text-[10px] font-bold text-secondary uppercase">Evening</p>
+                                    <p class="text-sm font-bold">Jimbaran Seafood</p>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="bg-error-container/10 p-6 rounded-lg border-l-4 border-error">
+                            <p class="text-sm text-on-error-container">"Wasting time banget saat Swab PCR untuk pulang, antriannya panjang dan tidak terarah."</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Day 4 -->
+                <section class="relative" id="day4">
+                    <div class="absolute -left-4 top-0 w-px h-full bg-surface-container-highest hidden lg:block"></div>
+                    <div class="absolute -left-6 top-2 w-4 h-4 rounded-full bg-primary/20 ring-4 ring-surface hidden lg:block"></div>
+                    <div class="flex flex-col md:flex-row gap-8 items-center bg-surface-container-lowest p-8 rounded-xl clay-shadow group">
+                        <div class="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden relative">
+                             <!-- Use bali5.jpg or similar -->
+                             <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="bali5.jpg"/>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h4 class="text-xs font-black text-primary/60 tracking-[0.2em] uppercase font-headline">Day 04</h4>
+                            <h2 class="text-3xl font-bold text-on-surface font-headline leading-tight mb-4">The Farewell</h2>
+                            <p class="text-on-surface-variant font-body leading-relaxed mb-6">
+                                08.00 : Jalan-jalan di sekitar pantai Jimbaran. <br>
+                                10.00 : Ke Bandara dan memulangkan mobil sewaan. <br>
+                                17.00 : Menaiki pesawat untuk kembali ke Jakarta.
+                            </p>
+                            <div class="bg-surface p-4 rounded-lg">
+                                <p class="text-sm font-semibold italic text-primary">"Sampai jumpa lagi, Bali. Terima kasih telah memberikan ketenangan di masa sulit."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Insights Section (Replaced Day 4) -->
+                <section class="glass-card p-12 rounded-xl">
+                    <h2 class="text-3xl font-bold mb-8 font-headline">Travel Tips & Insights</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-primary">
+                                <span class="material-symbols-outlined">waves</span>
+                                <h4 class="font-bold">Pasang Surut Air Laut</h4>
+                            </div>
+                            <p class="text-on-surface-variant text-sm">Sangat rugi kalau ke laut saat air pasang. Selalu cek jadwal di pasanglaut.com agar bisa menikmati sunset di tepi pantai.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-secondary">
+                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <h4 class="font-bold">Shopping during Pandemic</h4>
+                            </div>
+                            <p class="text-on-surface-variant text-sm">Banyak penjual tutup di Kuta. Jika ada yang buka, harganya cenderung tinggi.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto text-sm text-slate-500">
+            <div class="text-lg font-bold text-teal-800">Ervlyn Wisata</div>
+            <p>© 2024 Ervlyn Wisata. All stories preserved.</p>
+            <div class="flex gap-8">
+                <a class="hover:text-teal-500 transition-all" href="Contact.html">Contact Me</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

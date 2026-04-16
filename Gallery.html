@@ -1,189 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html class="light" lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: bodoni MT;
-  padding: 10px;
-  background: #AAC3DB;
-}
-
-/* Header/Blog Title */
-.header {
-box-shadow: 0 0 20px #000000b3;
-  padding: 30px;
-  text-align: center;
-  background: white;
-  background-image: url('bali4.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
- 
-}
-
-/* Style the topnav links */
-.topnav a {
-box-shadow: 0 0 20px #000000b3;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  background-image: url('bali5.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-  width: 100%;
-  padding: 20px;
-  
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-box-shadow: 0 0 10px #000000b3;
-  padding: 20px;
-  text-align: center;
-  background: #899199;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Gallery | Ervlyn Wisata</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-background": "#2c2f31",
+                "error-container": "#fb5151",
+                "on-primary-fixed-variant": "#00616e",
+                "surface-tint": "#006572",
+                "on-error-container": "#570008",
+                "secondary-fixed": "#e3e6b1",
+                "on-tertiary-container": "#004764",
+                "surface-container": "#e5e9eb",
+                "surface-container-highest": "#d9dde0",
+                "secondary-dim": "#4f522a",
+                "surface": "#f5f7f9",
+                "tertiary-fixed-dim": "#7dc4ef",
+                "tertiary-dim": "#005577",
+                "inverse-on-surface": "#9a9d9f",
+                "on-secondary": "#f4f7c0",
+                "error-dim": "#9f0519",
+                "outline": "#747779",
+                "background": "#f5f7f9",
+                "on-tertiary": "#e8f4ff",
+                "tertiary-container": "#8bd2fe",
+                "primary-dim": "#005864",
+                "error": "#b31b25",
+                "primary-fixed": "#8eebfc",
+                "surface-dim": "#d0d5d8",
+                "on-primary-fixed": "#00424c",
+                "primary-container": "#8eebfc",
+                "inverse-primary": "#8eebfc",
+                "tertiary": "#006288",
+                "surface-container-high": "#dfe3e6",
+                "on-tertiary-fixed-variant": "#005171",
+                "outline-variant": "#abadaf",
+                "on-secondary-fixed-variant": "#5b5e35",
+                "surface-container-low": "#eef1f3",
+                "secondary-fixed-dim": "#d5d8a4",
+                "on-secondary-container": "#51542c",
+                "surface-container-lowest": "#ffffff",
+                "on-surface-variant": "#595c5e",
+                "on-primary-container": "#005762",
+                "secondary-container": "#e3e6b1",
+                "on-primary": "#d9f8ff",
+                "on-tertiary-fixed": "#003248",
+                "secondary": "#5b5e35",
+                "on-error": "#ffefee",
+                "inverse-surface": "#0b0f10",
+                "on-surface": "#2c2f31",
+                "tertiary-fixed": "#8bd2fe",
+                "primary": "#006572",
+                "on-secondary-fixed": "#3f421b",
+                "primary-fixed-dim": "#80dcee",
+                "surface-variant": "#d9dde0",
+                "surface-bright": "#f5f7f9"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .clay-shadow {
+            box-shadow: 0 20px 40px -10px rgba(0, 101, 114, 0.08), inset 0 2px 4px rgba(142, 235, 252, 0.4);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 2rem;
+        }
+        .grid-span-2 { grid-row: span 2; }
+        .grid-span-3 { grid-column: span 1; grid-row: span 3; }
+        @media (min-width: 1024px) {
+            .grid-span-3 { grid-column: span 2; grid-row: span 2; }
+        }
+    </style>
 </head>
-<body>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-black tracking-tighter text-teal-800 font-headline">
+                Ervlyn Wisata
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-label">
+                <a class="text-slate-500 hover:text-teal-600 transition-all font-medium" href="index.html">Home</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all font-medium" href="home.html">Travel Log</a>
+                <a class="text-teal-600 border-b-2 border-teal-500 pb-1 font-bold" href="Gallery.html">Gallery</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all font-medium" href="About.html">About</a>
+                <a class="text-slate-500 hover:text-teal-600 transition-all font-medium" href="Contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-teal-700">account_circle</span>
+            </div>
+        </nav>
+    </header>
 
-<div class="header">
-  <h1>Ervlyn's Website</h1>
-  
-</div>
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center md:text-left">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.1em] text-on-primary-container bg-primary-container rounded-full font-label uppercase">
+                Visual Sanctuary
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface font-headline leading-[1.1] mb-8">
+                Moments <span class="text-primary italic">Suspended</span> in Light
+            </h1>
+        </section>
 
-<div class="topnav">
-  <a href="home.html">Home</a>
-  <a href="Gallery.html">Gallery</a>
-  <a href="About.html">About me</a>
-  <a href="Contact.html" style="float:right">Contact me</a>
-</div>
+        <!-- Immersive Grid -->
+        <section class="editorial-grid">
+            <!-- La Briza -->
+            <div class="grid-span-3 rounded-xl overflow-hidden group relative clay-shadow hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500">
+                <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" src="images/1.jpg"/>
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                    <p class="text-white/80 text-sm font-label uppercase tracking-widest mb-2">Canggu, Bali</p>
+                    <h3 class="text-white text-2xl font-bold font-headline">La Briza</h3>
+                </div>
+            </div>
+            <!-- Bandara -->
+            <div class="grid-span-2 rounded-lg overflow-hidden group relative clay-shadow hover:-translate-y-2 transition-all duration-500">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="images/2.JPG"/>
+                <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+                </div>
+                <div class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">International Airport</div>
+            </div>
+            <!-- Tanah Lot -->
+            <div class="grid-span-2 rounded-lg overflow-hidden group relative clay-shadow hover:-translate-y-2 transition-all duration-500">
+                <img class="w-full h-full object-cover" src="images/3.jpg"/>
+                <div class="absolute bottom-4 left-4 text-white font-bold text-lg drop-shadow-md">Tanah Lot Temple</div>
+            </div>
+            <!-- Extra Grid Items with placeholders if needed, or just these 3 -->
+            <div class="grid-span-2 bg-surface-container-high rounded-xl flex items-center justify-center p-8 text-center border-2 border-dashed border-outline-variant">
+                <p class="text-on-surface-variant font-headline font-bold">More Memories Coming Soon</p>
+            </div>
+        </section>
 
+        <!-- Background the Lens -->
+        <section class="mt-32 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl -z-10 group-hover:bg-tertiary-container/40 transition-colors"></div>
+                <div class="rounded-xl overflow-hidden clay-shadow rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                    <img class="w-full h-[500px] object-cover" src="bali5.jpg"/>
+                </div>
+            </div>
+            <div class="pl-0 md:pl-12">
+                <h2 class="text-4xl font-extrabold font-headline mb-6 text-on-surface">Beyond the Lens</h2>
+                <p class="text-lg text-on-surface-variant leading-relaxed mb-8 font-body">
+                    Potret ini bukan sekadar gambar, melainkan jangkar dari kenangan yang tak terlupakan. Setiap bingkai di galeri ini adalah saksi bisu keindahan Bali yang menenangkan hati.
+                </p>
+                <a href="Contact.html" class="group flex items-center justify-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-bold clay-shadow hover:scale-105 active:scale-95 transition-all w-fit">
+                    Kirim Pesan
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
-<div class="row">
-    <div class="card">
-      <h2>My Gallery</h2>
-      <h4>Tempat Wisata</h4>
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\1.jpg" alt="La Briza" width="400" height="550">
-    <div class="desc">1. La Briza</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\2.jpg" alt="Bandara I Gusti Ngurah Rai" width="500" height="400">
-    
-    <div class="desc">2. Bandara I Gusti Ngurah Rai
-	</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="images\3.jpg" alt="Tanah Lot" width="500" height="400">
-   
-    <div class="desc">3. Tanah Lot</div>
-  </div>
-</div>
-
-
-
-
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-  
-</div>
-
-    </div>
-</div>
-
-<div class="footer">
-<p>Author: 12170048 - Ervlyn Wisata<br>
-  <a href="mailto:ervlynwisata@gmail.com"> My Email : ervlynwisata@gmail.com</a></p>
-  <a href="https://instagram.com/ervlynwisata/"><img src="images\ig.png" width="50" height="50"></a>
-  <a href="https://facebook.com"><img src="images\fb.png" width="50" height="50"></a>
-  <a href="https://www.tiktok.com/"><img src="images\tiktok.png" width="50" height="50"></a>
-</div>
-  
-</div>
-
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto text-sm text-slate-500">
+            <div class="text-lg font-bold text-teal-800 font-headline">Ervlyn Wisata</div>
+            <p>© 2024 Captured with Soul.</p>
+        </div>
+    </footer>
 </body>
 </html>
